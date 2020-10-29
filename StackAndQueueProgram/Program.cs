@@ -28,6 +28,10 @@ namespace StackAndQueueProgram
             queue.Enqueue(70);
             queue.Display();
             Console.ReadKey();
+            Console.WriteLine("\n-------------------------------");
+            queue.Dequeue();
+            queue.IsEmpty();
+            Console.ReadKey();
         }
     }
 }

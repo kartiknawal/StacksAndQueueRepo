@@ -4,7 +4,7 @@ using System.Text;
 
 namespace StackAndQueueProgram
 {
-    public class Queue
+    class Queue
     {
         Node head = null;
 
@@ -40,6 +40,22 @@ namespace StackAndQueueProgram
                 temp = temp.next;
             }
         }
-
+        internal void Dequeue()
+        {
+            if (this.head == null)
+            {
+                Console.WriteLine("Queue is empty, Dequeuing is not possible");
+                return;
+            }
+            Console.WriteLine("{0} is Dequeued ", this.head.data);
+            this.head = this.head.next;
+        }
+        internal void IsEmpty()
+        {
+            while (this.head != null)
+            {
+                Dequeue();
+            }
+        }
     }
 }
