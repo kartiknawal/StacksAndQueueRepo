@@ -14,6 +14,12 @@ namespace StackAndQueueProgram
             stack.Push(56);
             stack.Display();
             Console.ReadKey();
+            Console.WriteLine("\n-------------------------------");
+            stack.Peak();
+            stack.Pop();
+            stack.IsEmpty();
+            stack.Display();
+            Console.ReadKey();
         }
     }
 }
